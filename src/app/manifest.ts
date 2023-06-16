@@ -2,32 +2,42 @@ import type { MetadataRoute } from "next";
 
 const manifest = (): MetadataRoute.Manifest => {
   return {
-    "name": "Eci Messanger",
-    "short_name": "Messanger",
+    name: "Ecommerce Inside",
+    short_name: "Ecommerce Inside",
+    description: "Ecommerce Inside is a full-service digital solutions agency based in UAE specializing in branding designs, Software, Mobile Apps, Webs, & Marketing Solutions.",
+    "theme_color": "#ffffff",
+    "background_color": "#004740",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "id": "/",
+    "start_url": "/",
     "icons": [
       {
-        "src": "path/to/maskable_icon.png",
-        "sizes": "196x196",
+        "src": "icons/manifest-icon-192.maskable.png",
+        "sizes": "192x192",
         "type": "image/png",
         "purpose": "any"
       },
       {
-        "src": "/icons/android-chrome-384x384.png",
-        "sizes": "384x384",
-        "type": "image/png"
+        "src": "icons/manifest-icon-192.maskable.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
       },
       {
-        "src": "/icons/icon-512x512.png",
+        "src": "icons/manifest-icon-512.maskable.png",
         "sizes": "512x512",
-        "type": "image/png"
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "icons/manifest-icon-512.maskable.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
       }
     ],
-    "theme_color": "#317EFB",
-    "background_color": "#FFFFFF",
-    "start_url": "/",
-    "display": "standalone",
-    "orientation": "portrait"
-  }
+  };
 };
 
 export default manifest;

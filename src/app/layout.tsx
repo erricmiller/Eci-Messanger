@@ -25,7 +25,7 @@ export default function RootLayout(props: RootLayoutProps) {
   return (
 
     <html lang="en">
-      <body className={`mx-auto max-w-[1920px] ${poppins.className}`}>
+      <body cz-shortcut-listen="true" className={`mx-auto max-w-[1920px] ${poppins.className}`}>
         <ClientProvider>
         <SessionProvider session={session}>
           {children}
