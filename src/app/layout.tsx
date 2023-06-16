@@ -7,6 +7,7 @@ import { Session } from 'next-auth';
 import { SessionProvider } from 'next-auth/react';
 import { ClientProvider } from "@/utils/trpc-provider";
 import { siteConfig } from "@/config/site";
+import Header from "@/components/Header/Header";
 
 // Note: Never import/require the *.min.js files from the npm package.
 const poppins = Poppins({
@@ -28,6 +29,7 @@ export default function RootLayout(props: RootLayoutProps) {
       <body cz-shortcut-listen="true" className={`mx-auto max-w-[1920px] ${poppins.className}`}>
         <ClientProvider>
         <SessionProvider session={session}>
+          <Header />
           {children}
           </SessionProvider> 
         </ClientProvider>

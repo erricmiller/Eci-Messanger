@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    h1,
+    .h1 {
+      @apply sm:text-[32px] sm:leading-[38px] md:text-[34px] md:leading-[40px] lg:text-[37px] lg:leading-[45px] xl:text-[40px] xl:leading-[48px];
+    }
+    h2,
+    .h2 {
+      @apply sm:text-[27px] sm:leading-[32px] md:text-[28px] md:leading-[34px] lg:text-[30px] lg:leading-[36px] xl:text-[32px] xl:leading-[38px];
+    }
+    h3,
+    .h3 {
+      @apply sm:text-[25px] sm:leading-[30px] md:text-[25px] md:leading-[30px] lg:text-[27px] lg:leading-[32px] xl:text-[28px] xl:leading-[34px];
+    }
+    h4,
+    .h4 {
+      @apply sm:text-[22px] sm:leading-[27px] md:text-[23px] md:leading-[27px] lg:text-[23px] lg:leading-[28px] xl:text-[24px] xl:leading-[29px];
+    }
+    h5,
+    .h5 {
+      @apply sm:text-[20px] sm:leading-[24px] md:text-[20px] md:leading-[24px] lg:text-[20px] lg:leading-[24px] xl:text-[20px] xl:leading-[24px];
+    }
+    h6,
+    .h6 {
+      @apply sm:text-[16px] sm:leading-[20px] md:text-[16px] md:leading-[20px] lg:text-[16px] lg:leading-[20px] xl:text-[16px] xl:leading-[20px];
+    }
+    p,
+    .p {
+      @apply text-[16px] leading-[20px];
+    }
+    .small {
+      @apply text-[14px] leading-[18px];
+    }
+}
+
+
+:root {
+  --dark-blue: #201949;
+  --black: #000;
+  --white: #fff;
+  --caribbeangreen: #0DE2A3;
+  --gray: #ebeaea;
+}
